@@ -1,0 +1,27 @@
+{
+  "name": "achart-auto",
+  "version": "1.0.0",
+  "description": "auto generate ticks of axis",
+  "keywords": ["acharts","auto","axis"],
+  "homepage": "https://github.com/acharts/achart-auto",
+  "author": "dxq613@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acharts/achart-auto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acharts/achart-auto/issues"
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "index.js",
+    "dependencies": {
+      "achart-util" : "1.1.0",
+      "achart-date" : "1.0.0"
+    },
+    "devDependencies": {
+      "expect.js": "0.3.1",
+      "jquery" : "1.9.1"
+    }
+  }
+}

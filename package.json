@@ -1,6 +1,6 @@
 {
   "name": "achart-auto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "auto generate ticks of axis",
   "keywords": ["acharts","auto","axis"],
   "homepage": "https://github.com/acharts/achart-auto",
@@ -16,8 +16,8 @@
   "spm": {
     "main": "index.js",
     "dependencies": {
-      "achart-util" : "1.1.0",
-      "achart-date" : "1.0.0"
+      "achart-util" : "~1.1.0",
+      "achart-date" : "~1.0.0"
     },
     "devDependencies": {
       "expect.js": "0.3.1",

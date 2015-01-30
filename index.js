@@ -141,24 +141,25 @@ function analyze(arr){
 //将多维数组变成一维
 function getSimpleArray(data,stacked){
   var arr = [];
-  if(Util.isArray(data[0])){
     if(stacked){
-      Util.each(data[0],function(value,index){
-        var temp = value;
-        for(var i = 1 ; i< data.length; i++){
-          temp += data[i][index];
-        }
-        arr.push(temp);
-      });
+      if(Util.isArray(data[0])){
+        Util.each(data[0],function(value,index){
+          var temp = value;
+          for(var i = 1 ; i< data.length; i++){
+            temp += data[i][index];
+          }
+          arr.push(temp);
+        });
+      }
     }else{
       Util.each(data,function(sub){
-        arr = arr.concat(sub);
+        if(Util.isArray(sub)){
+          arr = arr.concat(sub);
+        }else{
+          arr.push(sub);
+        }
       });
     }
-    
-  }else{
-    arr = data;
-  }
   return arr;
 }
 

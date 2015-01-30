@@ -1,6 +1,6 @@
 {
   "name": "achart-auto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "auto generate ticks of axis",
   "keywords": ["acharts","auto","axis"],
   "homepage": "https://github.com/acharts/achart-auto",

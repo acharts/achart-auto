@@ -8,7 +8,7 @@ var
   Util = require('achart-util'),
   DateUtil = require('achart-date'),
   snapArray = [0,1,1.5,2,2.5,3,4,5,6,8,10],
-  intervalArray = [0,1,2.5,5,10],
+  intervalArray = [0,1,2,5,10],
   snapTimeArray = [1,2,4,6,8,12],
   MIN_COUNT = 5, //最小6个坐标点
   MAX_COUNT = 7; //最多8个坐标点

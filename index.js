@@ -475,7 +475,7 @@ Auto.Time.caculate = function(info){
   if(!ticks.length){
     min = Math.floor(min / 1000) * 1000;
     max = Math.ceil(max/1000) * 1000;
-    var count = (max - min)/interval;
+    var count = Math.ceil((max - min)/interval);
     for(var i = 0 ; i <= count ;i++){
       ticks.push(tryFixed(interval * i + min,interval));
     }
